@@ -12,14 +12,14 @@ RUN \
         /tmp/*
         
 #Install Librespot
-RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ librespot=0.6.0-r0
+RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ librespot=0.7.1-r0
 
 #Install Snapcast
-RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ snapcast-server=0.31.0-r0
+RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ snapcast=0.32.3-r0
 
 #Install Snapweb
 RUN \
-    wget https://github.com/badaix/snapweb/releases/download/v0.8.0/snapweb.zip && \
+    wget https://github.com/badaix/snapweb/releases/download/v0.9.2/snapweb.zip && \
     unzip -o snapweb.zip -d /usr/share/snapserver/snapweb/ && \
     rm snapweb.zip
 
