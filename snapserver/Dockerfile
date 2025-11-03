@@ -15,7 +15,7 @@ RUN \
 RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ librespot=0.7.1-r0
 
 #Install Snapcast
-RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ snapcast=0.32.3-r0
+RUN apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ snapcast=0.34.0-r0
 
 #Install Snapweb
 RUN \
